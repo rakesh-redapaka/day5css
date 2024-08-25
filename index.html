@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+    <style>
+        body{
+            background-color: rgb(228, 220, 220);
+        }
+        .container{
+           width: 100%;
+        }
+        .box1a{
+           padding: 5px;
+           display: flex;
+           width: 50%;
+        }
+        .box1b{
+            display: flex;
+            width: 250px;
+            padding: 6px;
+        }
+        li{
+          list-style: none;  
+        }
+        .box1c{
+            padding: 10px;
+            display: flex;
+            width: 220px;
+            justify-content: space-between;
+        }
+        main{
+            border: 1px solid rgb(247, 232, 232);
+            width: 290px;
+            display: inline-block;
+            margin: 25px;
+            background-color: whitesmoke;
+            border-radius: 5%;
+            margin-left: 5vw; 
+            align-items: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- stripe -->
+    <main>
+    <div class="container">
+    <div class="box1">
+        <div class="box1a">
+            <img src="data:image/png;base64,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" alt="" width="100px">
+        <div>
+    <ul>
+    <li><b>stripe</b></li>
+    <li style="color: gray;">payment services</li>
+    <li>⭐⭐⭐⭐</li>
+    </ul>
+    </div>
+</div>
+</div>
+</div>
+<div class="box1b">
+    Get more context on your users with stripe data inside our platform.
+</div>
+<div class="box1c">
+<p>Installed 172 items</p>
+<p><a href="view">views</a></p>
+</div></main>
+<main>
+    <!-- mailchimp -->
+    <div class="container">
+    <div class="box1">
+        <div class="box1a">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgdlwsj2ll8ECdoRgsqS3eP7Qih0QUsPptvg&s" alt="" width="70px">
+        <div>
+    <ul>
+    <li><b>Mailchimp</b></li>
+    <li style="color: gray;">projectMangaement</li>
+    <li>⭐⭐⭐⭐</li>
+    </ul>
+    </div>
+</div>
+</div>
+</div>
+<div class="box1b">
+    Capture and sync subscribes from your mailchimp platform to ours with ease.
+</div>
+<div class="box1c">
+<p>Installed 1234 items</p>
+<p><a href="view">views</a></p>
+</div>
+    </main>
+    <!-- drop -->
+    <main>
+        <div class="container">
+        <div class="box1">
+            <div class="box1a">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPZ64VA0lLQZbHnw2Kl3gvjOrguE5tJxIhQg&s" alt="" width="70px">
+            <div>
+        <ul>
+        <li><b>Drop</b></li>
+        <li style="color: gray;">File Management</li>
+        <li>⭐⭐⭐⭐</li>
+        </ul>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="box1b">
+        Use dropflex to sync your photos to our platform and share it with others
+    </div>
+    <div class="box1c">
+    <p>Installed 1234 items</p>
+    <p><a href="view">views</a></p>
+    </div>
+        </main><br>
+        <!-- shopify -->
+        <main>
+            <div class="container">
+            <div class="box1">
+                <div class="box1a">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9tr3E-klghWmuQZVj4aF9GRCmEo6O8AIvpw&s" alt="" width="70px">
+                <div>
+            <ul>
+            <li><b>Shopify</b></li>
+            <li style="color: gray;">Ecommerce</li>
+            <li>⭐⭐⭐⭐</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="box1b">
+            sell you items with ease with having any website with our free platform 
+        </div>
+        <div class="box1c">
+        <p>Installed 1234 items</p>
+        <p><a href="view">views</a></p>
+        </div>
+            </main>
+            <!-- Atlassian -->
+            <main>
+                <div class="container">
+                <div class="box1">
+                    <div class="box1a">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG3PybDJp36-8p_j571BDYaSFkMb_bntKWlw&s" alt="" width="70px">
+                    <div>
+                <ul>
+                <li><b>Atlassian</b></li>
+                <li style="color: gray;">projectMangaement</li>
+                <li>⭐⭐⭐⭐</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            </div>
+            <div class="box1b">
+                Developing products for developers ,project managers and architects 
+            </div>
+            <div class="box1c">
+            <p>Installed 345 items</p>
+            <p><a href="view">views</a></p>
+            </div>
+                </main>
+                <!-- salesforce -->
+                <main>
+                    <div class="container">
+                    <div class="box1">
+                        <div class="box1a">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeapPHP0YBX7Q-bfPqMtfTy6hlQ8fdUVca0A&s" alt="" width="70px">
+                        <div>
+                    <ul>
+                    <li><b>Salesforce</b></li>
+                    <li style="color: gray;">projectMangaement</li>
+                    <li>⭐⭐⭐⭐</li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <div class="box1b">
+                    Developing products for developers ,project managers and architects 
+                </div>
+                <div class="box1c">
+                <p>Installed 345 items</p>
+                <p><a href="view">views</a></p>
+                </div>
+                    </main>
+</body>
+</html>
